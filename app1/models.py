@@ -12,7 +12,7 @@ class Emissor(models.Model):
     Modelo representa o Emissor da Nota Fiscal
     O Emissor é uma empresa que emite a nota fiscal para que eu a pague, ou, minha empresa emite uma nota fiscal.
     '''
-    cpnj = models.CharField('CNPJ', max_length=50, primary_key=True)
+    cnpj = models.CharField('CNPJ', max_length=50, primary_key=True)
     nome = models.CharField('nome', max_length=50)
 
     def __str__(self):
